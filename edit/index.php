@@ -4,7 +4,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
-    <link rel='shortcut icon' href='/Notepad/img/favicon.ico' type='image/x-icon'/ >
+    <link rel='shortcut icon' href='/Notepad/img/favicon.ico' type='image/x-icon'/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/Notepad/css/bootstrap.min.css">
@@ -15,8 +15,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     <script type="text/javascript" src="/Notepad/js/jquery-ui.js"></script>
     <script type="text/javascript" src="/Notepad/js/mine.js"></script>
     <link rel="stylesheet" type="text/css" href="/Notepad/css/jquery-ui.css" />
-
-
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
 <title>Ireport SLS Offline</title>
@@ -108,13 +106,12 @@ print ('<tbody id="'.$linep[1].'"  class="bg-info" ><tr> <th>Index</th> <td><inp
 <div id="footer" style="width=auto;">
 <a href="http://validator.w3.org/check?uri=referer">Xhtml Valid</a> |
 <a href="http://jigsaw.w3.org/css-validator/">Css Valid</a> |
-&nbsp;&copy 2016 <a href="mailto:Abdelazeem.mueer@tedata.net"><strong><i>Abdul-Azeem Mouneer</i></strong></a>
+&copy; 2016 <a href="mailto:Abdelazeem.mueer@tedata.net"><strong><i>Abdul-Azeem Mouneer</i></strong></a>
 </div>
 
 
 </div>
 
-</body>
 
 <script type="text/javascript">
     var documentTitle = document.title + " --- ";
@@ -139,6 +136,10 @@ $(document).ready(function(){
 });
 
 </script>
+
+</body>
+
+
 
 
 </html>
