@@ -43,10 +43,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 <!--MAIN CONTENT-->
 
 <div id="table">
-         <form>
-            <table class="table   tabl">
-               
-                
+         <form  onsubmit="phpAjax(); return false;">
+            <table class="table tabl">
+
+
                     <tr class="">
                         <thead><th>Ticket Number</th>
 
@@ -117,7 +117,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
                             <input class="form-control in" type="text" id="comm" name="comm" placeholder="Leave a Comment">
                         </td></thead>
                         </tr>
-                        
+
 
                         <tr class="">
                         <thead><th>Time</th>
@@ -125,22 +125,22 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
                             <input class="form-control in" type="text" id="timeo" name="timeo" placeholder="The Time Now">
                         </td></thead>
                         </tr>
-                        
+
                         </tr>
 
-                
+
             </table>
-           
-            
+
+            <div style="text-align: center;">
+                 <input class="btn" id="add0" type="submit"  value="Add This Ticket">
+            </div>
 
           </form>
-         
+
         </div>
 
         </br>
-            <div style="text-align: center;">
-                 <input class="btn" id="add0" type="button" onclick="phpAjax();" value="Add This Ticket">    
-            </div>
+
                         <div class="done" id="done"><strong><i>Ticket Added Successfully!</i></strong></div>
 
 
@@ -173,6 +173,10 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 // document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
 //  document.body.style.msTransform =   scale;       // IE 9
 //  document.body.style.transform = scale;     // General
+//$(document).ready(function(){
+//$('#comm').val(" ");
+//});
+
 
 </script>
 

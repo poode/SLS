@@ -8,6 +8,19 @@ function phpAjax() {
     $(document).ready(function() {
 
             $("#add0").on('click', function() {
+
+if ($('#tkt').val() =="" || $('#follow').val()=="" || $('#escal').val()=="" || $('#tktType').val()=="" || $('#probstat').val()=="" || $('#pop').val()=="" || $('#tktstat').val()=="" || $('#calledcst').val()=="" || $('#smscst').val()==""){
+                // $( "#add0" ).unbind( "click");
+                alert("One Or More Place Are Empty!");
+                return false;
+                // $( "#add0" ).unbind( "click");
+              } else {
+
+                $("#done").show('slow')
+                    .delay(2000);
+                $("#done").hide('slow')
+                    .delay(1000);
+
                 var val = $('#tkt').val();
                 var val2 = $('#follow').val();
                 var val3 = $('#escal').val();
@@ -37,19 +50,21 @@ function phpAjax() {
                     },
                     success: function(result) {
 
+
                         var re_loading = function() {
                             location.reload();
                         };
                         setTimeout(re_loading, 1000);
 
-                    }
+
+                    },
+
+                    async: false
+
                 });
+}
 
 
-                $("#done").show('slow')
-                    .delay(2000);
-                $("#done").hide('slow')
-                    .delay(1000);
 
 
 
@@ -59,6 +74,7 @@ function phpAjax() {
 
 
 }
+
 
 ////////////
 
