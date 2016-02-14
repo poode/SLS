@@ -1,0 +1,232 @@
+/* CSS Document */
+
+
+/*Welcome to the Css for Notepad
+Please note that the !important you
+see is a hack for firefox/IE.
+The line with !important controls
+properties in Firefox, the line below
+for IE  */
+
+    tbody {
+            border-radius: 5px;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(158, 158, 158, 0.06);
+            border-radius: 5px;
+            padding-top: 20px;
+            font-family: myFirstFont;
+
+        }
+
+        .tableStyle {
+            display: none;
+        }
+
+        .tableStyle0 {
+            display: block;
+        }
+
+      #addEdit{
+        display: none;
+      }
+
+        @font-face {
+            font-family: myFirstFont;
+            src: url(/Notepad/fonts/sansation_light.woff);
+        }
+
+        .title {
+            color: black;
+            font-family: myFirstFont;
+        }
+
+
+        }
+
+        th {
+            font-family: myFirstFont;
+            text-align: center;
+        }
+
+
+        .in{
+
+        	margin-right: 230px;
+        }
+
+        .tabl{
+        	width: 650px;
+        	margin-left: 17px;
+            /*background-image:url(/Notepad/img/back.gif);*/
+            background-color: #F5F4E9;
+            margin:auto;
+            border-radius: 20px;
+            border: none;
+
+
+        }
+
+        .btn{
+            background-color: #c2c2a3;
+        }
+
+        .done{
+
+            display:none;
+            text-align: center;
+        }
+
+         .doneshow{
+
+            display:block;
+            text-align: center;
+         }
+
+
+body  {
+background:#668570;
+font-family: myFirstFont;
+}
+
+/*.ui-dialog-titlebar-close {
+  visibility: hidden;
+}*/
+
+/*  HEADER  */
+
+
+#header {
+
+margin-left:5px;
+/*width:581px;*/
+padding-bottom:1px;
+padding-left:70px;
+
+padding-top:7px !important;
+padding-top:28px;
+font-family: myFirstFont;
+
+}
+
+#header h1 {
+font-size:33px;
+font-family: myFirstFont;
+color:#000;
+font-weight:normal;
+text-align: center;
+}
+
+/*  CONTAINER BOX  */
+
+
+#box  {
+background-image:url(/Notepad/img/back.gif);
+width:661px;
+margin:auto;
+}
+
+#box p  {
+padding-left:20px;
+}
+
+
+/* MAIN CONTENT */
+
+
+#content p {
+padding-bottom:9.5px !important;
+padding-bottom:6px;
+font-family: myFirstFont;
+}
+
+#content {
+width:580px;
+margin-left:45px;
+
+margin-top:23px !important;
+margin-top:28px;
+
+font-family: myFirstFont;
+font-size:14px;
+color:#404040;
+
+line-height:1.8em !important;
+line-height:1.75em;
+
+}
+
+
+/*TOP NAVIGATION*/
+
+
+
+#nav {
+float:right;
+
+margin-top:-48px !important;
+margin-top:-45px;
+color: #662200;
+margin-right:19px;
+font-family: myFirstFont;
+font-size:15px;
+}
+
+#nav a, #content a {
+color:#808080;
+text-decoration:none;
+
+}
+
+#nav a:hover, #content a:hover  {
+text-decoration:underline;
+color:#000;
+}
+
+
+.sub  {
+font-size:18px;
+font-weight:normal;
+padding-left:13px;
+font-family: myFirstFont;
+color:#000;
+}
+
+.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable{
+
+    position: static;
+}
+
+/*FOOTER PROPERTIES*/
+
+
+#footer {
+/*width:581px;*/
+color:#000;
+padding-bottom:10px;
+padding-top:3px;
+font-family: myFirstFont;
+font-size:12px;
+margin-bottom:3px;
+
+margin-left:15px !important;
+margin-left:20px;
+
+line-height:1.75em;
+height:40px;
+text-align:center;
+}
+
+#footer a {
+color:#808080;
+text-decoration:none;
+font-family: myFirstFont;
+}
+
+#footer a:hover  {
+text-decoration:underline;
+color:#000;
+font-family: myFirstFont;
+}
