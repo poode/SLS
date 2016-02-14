@@ -51,7 +51,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 </div>
 
         <div id="tableshow" class="tableStyle0" >
-            <form>
+            <form id="search">
             <table border="0" cellpadding="1" cellspacing="5" width="100%" class="table table-hover table-condensed tabl" style="text-align: center;">
 
                 	<?php
@@ -80,6 +80,8 @@ print ('<tbody id="'.$linep[1].'"  class="bg-info" ><tr> <th>Index</th> <td><inp
 
         			?>
 
+
+
                </form>
             </table>
 
@@ -90,7 +92,7 @@ print ('<tbody id="'.$linep[1].'"  class="bg-info" ><tr> <th>Index</th> <td><inp
 </br>
 
 <div style="text-align: center;">
-     <input class="btn" id="addEdit" type="button" onclick="" value="Submit to This Ticket">
+     <input class="btn" id="addEdit" type="submit" onclick="" value="Submit to This Ticket">
 </div>
 
 <script type="text/javascript">
@@ -125,6 +127,16 @@ print ('<tbody id="'.$linep[1].'"  class="bg-info" ><tr> <th>Index</th> <td><inp
 // document.body.style.webkitTransform =  scale;    // Chrome, Opera, Safari
 //  document.body.style.msTransform =   scale;       // IE 9
 //  document.body.style.transform = scale;     // General
+
+$(document).ready(function(){
+
+  document.getElementById('search').addEventListener('keypress', function(event) {
+         if (event.keyCode == 13) {
+             $('#sbtn').click();
+         }
+     });
+
+});
 
 </script>
 
