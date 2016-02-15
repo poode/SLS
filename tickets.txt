@@ -1,3 +1,4 @@
-1|1234567|yes|noc|browsing|pending|mariutia|in-progress|yes|no||02/02/2016 -at- 16:19:51
-2|123|bh|hhhh|kkklj||kohjbjhbjh|vgvhchj|nn|yy|jjmkl|03/02/2016 -at- 05:23:23
-3|222|fvh|yfjgq|yffj|jffj|fjfj|jjdcq|yfjf|thdfdq||14/02/2016 at-> 06:55:22
+#1|1|yes|noc|data down|pending|salam|waiting for customer|no|yes||14/02/2016 at-> 20:12:44
+#2|2|no|iu|speed|pending|salam|in-progress|yes|no||14/02/2016 at-> 20:13:44
+#3|3|yes|IO|speed|pending|salam2|open|no|no||14/02/2016 at-> 20:14:37
+#4|444|yes|noc|speed|pending|salam23|in-progress|yes|no|no comment hhhhhhhhhh|15/02/2016 at-> 02:44:03

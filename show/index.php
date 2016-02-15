@@ -15,7 +15,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     <script type="text/javascript" src="/Notepad/js/jquery-ui.js"></script>
     <script type="text/javascript" src="/Notepad/js/mine.js"></script>
     <link rel="stylesheet" type="text/css" href="/Notepad/css/jquery-ui.css" />
-    
+
 
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
@@ -73,7 +73,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
                     </tr>
                 </thead>
                 <tbody>
-                	<?php 
+                	<?php
      						$DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];  //calrrayling super a
 	 						$myfile=$DOCUMENT_ROOT.'/Notepad'.'/tickets.txt'; //wher is my file in relative to root directory (/)
 	 						$lines = count(file($myfile));              // counting number of lines
@@ -84,8 +84,8 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
       			 						$read = trim($line);      // cleaning it from spaces
       			 						$linep = explode("|", $read);
 
-      			 						
-print ('<tr class="info">   <td>#'.$linep[0].'</td>    <td>'.$linep[1].'</td>    <td>'.$linep[2].'</td>    <td>'.$linep[3].'</td>    <td>'.$linep[4].'</td>    <td>'.$linep[5].'</td>     <td>'.$linep[6].'</td>    <td>'.$linep[7].'</td>    <td>'.$linep[8].'</td>   <td>'.$linep[9].'</td>  <td>'.$linep[10].'</td><td>'.$linep[11].'</td></tr>');
+
+print ('<tr class="info">   <td>'.$linep[0].'</td>    <td>'.$linep[1].'</td>    <td>'.$linep[2].'</td>    <td>'.$linep[3].'</td>    <td>'.$linep[4].'</td>    <td>'.$linep[5].'</td>     <td>'.$linep[6].'</td>    <td>'.$linep[7].'</td>    <td>'.$linep[8].'</td>   <td>'.$linep[9].'</td>  <td>'.$linep[10].'</td><td>'.$linep[11].'</td></tr>');
         															 }
 
         							fclose($Ofile);
@@ -96,9 +96,9 @@ print ('<tr class="info">   <td>#'.$linep[0].'</td>    <td>'.$linep[1].'</td>   
 
         </div>
 
-        
+
 </br>
-        
+
 
 
 

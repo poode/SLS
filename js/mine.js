@@ -74,9 +74,80 @@ if ($('#tkt').val() =="" || $('#follow').val()=="" || $('#escal').val()=="" || $
 
 
 }
+////////////ajax edit///////////////
+
+function php1Ajax() {
+var tkto =findtkt();
+    $(document).ready(function() {
 
 
-////////////
+
+            $("#addEdit").on('click', function() {
+
+if ($('#tkt').val() =="" || $('#follow').val()=="" || $('#escal').val()=="" || $('#tktType').val()=="" || $('#probstat').val()=="" || $('#pop').val()=="" || $('#tktstat').val()=="" || $('#calledcst').val()=="" || $('#smscst').val()==""){
+                alert("One Or More Place Are Empty!");
+                return false;
+              } else {
+
+                $("#done").show('slow')
+                    .delay(2000);
+                $("#done").hide('slow')
+                    .delay(1000);
+                var val0 = $('#indexo' + tkto + '').val();
+                var val = $('#tkt' + tkto + '').val();
+                var val2 = $('#follow' + tkto + '').val();
+                var val3 = $('#escal' + tkto + '').val();
+                var val4 = $('#tktType' + tkto + '').val();
+                var val5 = $('#probstat' + tkto + '').val();
+                var val6 = $('#pop' + tkto + '').val();
+                var val7 = $('#tktstat' + tkto + '').val();
+                var val8 = $('#calledcst' + tkto + '').val();
+                var val9 = $('#smscst' + tkto + '').val();
+                var val10 = $('#comm' + tkto + '').val();
+                var val11 = $('#timeo' + tkto + '').val();
+                $.ajax({
+                    url: "/Notepad/variable/edit.php",
+                    data: {
+                        indexo: val0,
+                        tkt: val,
+                        follow: val2,
+                        escal: val3,
+                        tktType: val4,
+                        probstat: val5,
+                        pop: val6,
+                        tktstat: val7,
+                        calledcst: val8,
+                        smscst: val9,
+                        comm: val10,
+                        timeo: val11
+
+                    },
+                    success: function(result) {
+
+
+                        var re_loading = function() {
+                            location.reload();
+                        };
+                        setTimeout(re_loading, 1000);
+
+
+                    },
+
+
+                });
+}
+
+
+
+
+
+            });
+
+    });
+
+
+}
+////////////////////////////
 
 $(document).ready(function() {
 
@@ -203,12 +274,12 @@ function findtkt() {
         } else {
 
             if (isNaN(tktn)) alert('Please enter a number only!');
-            if (tktn == '') alert('It\'s Empaty please enter ticket number');
+            if (tktn == '') alert('It\'s Empty please enter ticket number');
 
         }
 
     });
-
+return tktn;
 }
 
 $(document).ready(function() {

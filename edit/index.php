@@ -49,7 +49,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 </div>
 
         <div id="tableshow" class="tableStyle0" >
-            <form id="search">
+            <form id="search" onsubmit="php1Ajax(); return false;">
             <table border="0" cellpadding="1" cellspacing="5" width="100%" class="table table-hover table-condensed tabl" style="text-align: center;">
 
                 	<?php
@@ -58,13 +58,13 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	 						$lines = count(file($myfile));              // counting number of lines
     					 	$Ofile = fopen($myfile, "r") or die("Unable to open file!");   // making a resource to use
          	  						for ($i=0 ;$i <= $lines-1 ; $i++){
-	             						$ii = $i+1;
+
       			 						$line = fgets($Ofile);    //getting text in lines
       			 						$read = trim($line);      // cleaning it from spaces
       			 						$linep = explode("|", $read);
+                        $ii = $linep[1];
 
-
-print ('<tbody id="'.$linep[1].'"  class="bg-info" ><tr> <th>Index</th> <td><input type="text" class="form-control" name="indx" class="form-control" value ="'.$linep[0].'"></td>  </tr><tr> <th>Ticket Number</th>  <td><input type="text" class="form-control" name="tkt" value ="'.$linep[1].'"></td>  </tr><tr>  <th>Follow Up</th> <td><input type="text" class="form-control" name="follow" value ="'.$linep[2].'"></td>  </tr><tr>  <th>Escalated To</th> <td><input type="text" class="form-control" name="escal" value ="'.$linep[3].'"></td>  </tr><tr>  <th>Problem Category</th> <td><input type="text" class="form-control" name="tktType" value ="'.$linep[4].'"></td>  </tr><tr>  <th>Problem Status</th> <td><input type="text" class="form-control" name="probstat" value ="'.$linep[5].'"></td>  </tr><tr>  <th>POP</th>  <td><input type="text" class="form-control" name="pop" value ="'.$linep[6].'"></td>  </tr><tr> <th>Ticket Status</th>  <td><input type="text" class="form-control" name="tktstat" value ="'.$linep[7].'"></td>  </tr><tr>  <th>Called The Customer?</th> <td><input type="text" class="form-control" name="calledcst" value ="'.$linep[8].'"></td> </tr><tr>  <th>Sent SMS?</th> <td><input type="text" class="form-control" name="smscst" value ="'.$linep[9].'"></td> </tr><tr> <th>Comment</th> <td><input type="text" class="form-control" name="comm" value ="'.$linep[10].'"></td> </tr><tr> <th>Time</th> <td><input type="text" class="form-control" name="timeo" value ="'.$linep[11].'"></td></tr></tbody>');
+print ('<tbody id="'.$linep[1].'"  class="bg-info" ><tr> <th>Index</th> <td><input type="text" class="form-control" class="form-control" name="indexo" id ="indexo'.$ii.'" value ="'.$linep[0].'"></td>  </tr><tr> <th>Ticket Number</th>  <td><input type="text" class="form-control" name="tkt" id ="tkt'.$ii.'" value ="'.$linep[1].'"></td>  </tr><tr>  <th>Follow Up</th> <td><input type="text" class="form-control" name="follow" id="follow'.$ii.'" value ="'.$linep[2].'"></td>  </tr><tr>  <th>Escalated To</th> <td><input type="text" class="form-control" name="escal" id="escal'.$ii.'" value ="'.$linep[3].'"></td>  </tr><tr>  <th>Problem Category</th> <td><input type="text" class="form-control" name="tktType" id="tktType'.$ii.'" value ="'.$linep[4].'"></td>  </tr><tr>  <th>Problem Status</th> <td><input type="text" class="form-control" name="probstat" id="probstat'.$ii.'"  value = "'.$linep[5].'"></td>  </tr><tr>  <th>POP</th>  <td><input type="text" class="form-control" name="pop" id="pop'.$ii.'" value ="'.$linep[6].'"></td>  </tr><tr> <th>Ticket Status</th>  <td><input type="text" class="form-control" name="tktstat" id="tktstat'.$ii.'" value ="'.$linep[7].'"></td>  </tr><tr>  <th>Called The Customer?</th> <td><input type="text" class="form-control" name="calledcst" id="calledcst'.$ii.'" value ="'.$linep[8].'"></td> </tr><tr>  <th>Sent SMS?</th> <td><input type="text" class="form-control" name="smscst" id="smscst'.$ii.'" value ="'.$linep[9].'"></td> </tr><tr> <th>Comment</th> <td><input type="text" class="form-control" name="comm" id="comm'.$ii.'" value ="'.$linep[10].'"></td> </tr><tr> <th>Time</th> <td><input type="text" class="form-control" name="timeo" id="timeo'.$ii.'" value ="'.$linep[11].'"></td></tr></tbody>');
         															 }
 
         							fclose($Ofile);
@@ -84,14 +84,18 @@ print ('<tbody id="'.$linep[1].'"  class="bg-info" ><tr> <th>Index</th> <td><inp
             </table>
 
 
+
         </div>
 
 
 </br>
+<div class="done" id="done"><strong><i>Ticket Edited Successfully!</i></strong></div>
+</br>
 
 <div style="text-align: center;">
-     <input class="btn" id="addEdit" type="submit" onclick="" value="Submit to This Ticket">
+     <input class="btn" id="addEdit" type="submit"  value="Submit to This Ticket">
 </div>
+
 
 <script type="text/javascript">
 
