@@ -35,7 +35,7 @@ for IE  */
 
         @font-face {
             font-family: myFirstFont;
-            src: url(/Notepad/fonts/sansation_light.woff);
+            src: url(../fonts/sansation_light.woff);
         }
 
         .title {
@@ -44,7 +44,7 @@ for IE  */
         }
 
 
-        }
+        
 
         th {
             font-family: myFirstFont;
@@ -123,7 +123,7 @@ text-align: center;
 
 
 #box  {
-background-image:url(/Notepad/img/back.gif);
+background-image:url(../img/back.gif);
 width:661px;
 margin:auto;
 }

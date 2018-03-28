@@ -4,17 +4,17 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
-    <link rel='shortcut icon' href='/Notepad/img/favicon.ico' type='image/x-icon'/>
+    <link rel='shortcut icon' href='../img/favicon.ico' type='image/x-icon'/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/style.css" />
-    <script type="text/javascript" src="/Notepad/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/Notepad/js/jquery-ui.js"></script>
-    <script type="text/javascript" src="/Notepad/js/mine.js"></script>
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/mine.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
 <title>Ireport SLS Offline</title>
@@ -26,16 +26,16 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 <div id="box">
 
 <div id="header">
-<h1 title="file will be beside index.php"><a href="/Notepad/"><u>Offline Ireport SLS Solution</u></a></h1>
+<h1 title="file will be beside index.php"><a href="../"><u>Offline Ireport SLS Solution</u></a></h1>
 </div>
 
 <!--TOP NAVIGATION-->
 
 </br></br></br>
 <div id="nav">
-<a href="/Notepad/">Home</a>&nbsp;&nbsp;
-<a href="/Notepad/show/">Show Tickets</a>&nbsp;&nbsp;
-<a href="/Notepad/edit/">Edit Tickets</a>&nbsp;&nbsp;
+<a href="../">Home</a>&nbsp;&nbsp;
+<a href="../show/">Show Tickets</a>&nbsp;&nbsp;
+<a href="../edit/">Edit Tickets</a>&nbsp;&nbsp;
 <a href="#" id="myscript">My Scripts</a>&nbsp;&nbsp;
 </div>
 
@@ -54,7 +54,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 
                 	<?php
      						$DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];  //calrrayling super a
-	 						$myfile=$DOCUMENT_ROOT.'/Notepad'.'/tickets.txt'; //wher is my file in relative to root directory (/)
+	 						$myfile=$DOCUMENT_ROOT.'/SLS/tickets.txt'; //wher is my file in relative to root directory (/)
 	 						$lines = count(file($myfile));              // counting number of lines
     					 	$Ofile = fopen($myfile, "r") or die("Unable to open file!");   // making a resource to use
          	  						for ($i=0 ;$i <= $lines-1 ; $i++){

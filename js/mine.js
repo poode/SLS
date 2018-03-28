@@ -33,7 +33,7 @@ if ($('#tkt').val() =="" || $('#follow').val()=="" || $('#escal').val()=="" || $
                 var val10 = $('#comm').val();
                 var val11 = $('#timeo').val();
                 $.ajax({
-                    url: "/Notepad/variable/handl.php",
+                    url: "./variable/handl.php",
                     data: {
                         tkt: val,
                         follow: val2,

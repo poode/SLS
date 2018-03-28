@@ -6,15 +6,15 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='shortcut icon' href='/Notepad/img/favicon.ico' type='image/x-icon'/ >
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/style.css" />
-    <script type="text/javascript" src="/Notepad/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/Notepad/js/mine.js"></script>
-       <script type="text/javascript" src="/Notepad/js/jquery-ui.js"></script>
-    <link rel="stylesheet" type="text/css" href="/Notepad/css/jquery-ui.css" />
+    <link rel='shortcut icon' href='./img/favicon.ico' type='image/x-icon'/ >
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/mine.js"></script>
+       <script type="text/javascript" src="./js/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 
 <title>Ireport SLS Offline</title>
@@ -26,16 +26,16 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 <div id="box">
 
 <div id="header">
-<h1 title="file will be beside index.php"><a href="/Notepad/"><u>Offline Ireport SLS Solution</u></a></h1>
+<h1 title="file will be beside index.php"><a href="./"><u>Offline Ireport SLS Solution</u></a></h1>
 </div>
 
 <!--TOP NAVIGATION-->
 
 </br></br></br>
 <div id="nav">
-<a href="/Notepad/">Home</a>&nbsp;&nbsp;
-<a href="/Notepad/show/">Show Tickets</a>&nbsp;&nbsp;
-<a href="/Notepad/edit/">Edit Tickets</a>&nbsp;&nbsp;
+<a href="./">Home</a>&nbsp;&nbsp;
+<a href="./show/">Show Tickets</a>&nbsp;&nbsp;
+<a href="./edit/">Edit Tickets</a>&nbsp;&nbsp;
 <a href="#" id="myscript">My Scripts</a>&nbsp;&nbsp;
 </div>
 
