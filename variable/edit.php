@@ -15,7 +15,7 @@ $timeo = isset($_GET['timeo']) ? $_GET['timeo'] : '';
 
 
 $DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];  //calling super array
-$Myfile = $DOCUMENT_ROOT.'/Notepad'.'/tickets.txt'; //where is my file in relative to root directory (/)
+$Myfile = $DOCUMENT_ROOT.'/SLS/tickets.txt'; //where is my file in relative to root directory (/)
 $reading = fopen($Myfile, "r") or die("Unable to write to file!");   // making a resource to use
 $writing = fopen($Myfile, "w") or die("Unable to write to file!");
 $lines = count(file($Myfile));
@@ -36,7 +36,7 @@ if ($replaced)
 {
   rename($Myfile.'tmp', $Myfile);
 } else {
-  unlink($Myfile'.tmp');
+  unlink($Myfile.'tmp');
 }
 ///////////////////
 

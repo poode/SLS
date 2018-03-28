@@ -2,7 +2,7 @@
 
 
                             $DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];  //calling super array
-							$Myfile = $DOCUMENT_ROOT.'/test'.'/tickets.txt'; //wher is my file in relative to root directory (/)
+							$Myfile = $DOCUMENT_ROOT.'/SLS/tickets.txt'; //wher is my file in relative to root directory (/)
 							$ofile = fopen($Myfile, "a") or die("Unable to write to file!");   // making a resource to use
 			
 							fwrite($ofile , $out_put);

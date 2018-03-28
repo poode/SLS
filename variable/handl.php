@@ -18,7 +18,7 @@
 
 
 							$DOCUMENT_ROOT=$_SERVER['DOCUMENT_ROOT'];  //calling super array
-							$Myfile = $DOCUMENT_ROOT.'/Notepad'.'/tickets.txt'; //where is my file in relative to root directory (/)
+							$Myfile = $DOCUMENT_ROOT.'/SLS/tickets.txt'; //where is my file in relative to root directory (/)
 							$mfile = fopen($Myfile, "a") or die("Unable to write to file!");   // making a resource to use
 							$lines = count(file($Myfile));
 							$counter = $lines +1;
